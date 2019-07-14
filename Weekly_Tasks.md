@@ -1,4 +1,4 @@
-# Weekly Task
+# Weekly Tasks
 
 ## Weak 01: General Study
 (13/07/2019)
