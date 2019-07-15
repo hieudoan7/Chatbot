@@ -19,3 +19,4 @@
    - Hùng: file lẻ.
    - Hiếu: file chẵn.
 2. Vừa đọc vừa tóm tắt các yêu cầu trên tuỳ vào từng chủ đề của bài báo.
+3. Paper là 1 phần, phần chính là trả lời được những câu hỏi ở trên.
