@@ -32,12 +32,12 @@ Chatbot có khả năng tự thu thập dữ liệu train từ các cuộc đố
 Một số vấn đề được đề cập đến:  
     - Dunning-Kruger: Mô hình không tốt cũng sẽ không biết được điều nó làm là không tốt.
 ### Chatti: A Conversational Chatbot Platform
-Bài báo chủ yếu nói về ứng dụng chatti. Kiến trúc của ứng dụng được chia như sau:
-   - Dialog Management (DM): dùng để quản lý nội dung đối thoại.
-    - Action Planning (AP): đưa ra kế hoạch xử lý.
-    - Natural Language Understanding (NLU): gom ý chính của cuộc đối thoại, có nhiều phương pháp như (Pattern-base, statistical, deep neural (LSTM, CNN,...)).
-    - Natural Language Generation (NLG): sinh ra phản hồi.
-    - Knowledge Base (KB) lưu trữ và quản lý dữ liệu.
+Bài báo chủ yếu nói về ứng dụng chatti. Kiến trúc của ứng dụng được chia như sau:  
+   - Dialog Management (DM): dùng để quản lý nội dung đối thoại.  
+    - Action Planning (AP): đưa ra kế hoạch xử lý.  
+    - Natural Language Understanding (NLU): gom ý chính của cuộc đối thoại, có nhiều phương pháp như (Pattern-base, statistical, deep neural (LSTM, CNN,...)).  
+    - Natural Language Generation (NLG): sinh ra phản hồi.  
+    - Knowledge Base (KB) lưu trữ và quản lý dữ liệu.  
   
 [Chatti](./assets/imgs/Chatti.png)
 
