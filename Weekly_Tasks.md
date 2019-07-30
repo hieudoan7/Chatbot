@@ -26,11 +26,10 @@
 2. Vừa đọc vừa tóm tắt các yêu cầu trên tuỳ vào từng chủ đề của bài báo.
 3. Paper là 1 phần, phần chính là trả lời được những câu hỏi ở trên.
 ### Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
-Chatbot có khả năng tự thu thập dữ liệu train từ các cuộc đối thoại với người dùng.
-
-   - Đánh giá mức độ thoả mãn của câu trả lời. Khi cuộc trò chuyện diễn ra suôn sẻ, phản hồi của người dùng trở thành dữ liệu train mới.
-    - Khi chatbot mắc lỗi, nó sẽ yêu cầu phản hồi từ người dùng. Dự đoán phản hồi từ người dùng sẽ cải thiện khả năng đàm thoại của chatbot.
-Một số vấn đề được đề cập đến: 
+Chatbot có khả năng tự thu thập dữ liệu train từ các cuộc đối thoại với người dùng.  
+   - Đánh giá mức độ thoả mãn của câu trả lời. Khi cuộc trò chuyện diễn ra suôn sẻ, phản hồi của người dùng trở thành dữ liệu train mới.  
+    - Khi chatbot mắc lỗi, nó sẽ yêu cầu phản hồi từ người dùng. Dự đoán phản hồi từ người dùng sẽ cải thiện khả năng đàm thoại của chatbot.  
+Một số vấn đề được đề cập đến:  
     - Dunning-Kruger: Mô hình không tốt cũng sẽ không biết được điều nó làm là không tốt.
 ### Chatti: A Conversational Chatbot Platform
 Bài báo chủ yếu nói về ứng dụng chatti. Kiến trúc của ứng dụng được chia như sau:
