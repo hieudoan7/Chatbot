@@ -5,26 +5,15 @@
 ### Yêu cầu 
 (13/07/2019)
 1. Các vấn đề của chatbot?
-   - Đối với chatbot tự học sau khi train: Phải giải quyết được bài toán xác định được các câu trả lời của người dùng có phù hợp.
 2. Thành phần chatbot
-   Chatbot bao gồm phần chính:
-   - Natural Language Understanding
-   - Natural Language Generation
-   - Knowledge Base
 3. Giải quyết như thế nào
 4. Ngôn ngữ khác tiếng anh: tiếng trung tham khảo
 5. Vấn đề gì cần đi sâu vào
 6. Ở VN, chatbot tới đâu rồi? trải nghiệm thử một số cái
 7. Chatbot 1 chiều (hỏi-đáp) vs 2 chiều (đối thoại)
 8. Ghi document cho nhưng gì đã tìm hiểu.
-   
-### Phân chia công việc
-[Tài liệu tham khảo](https://drive.google.com/drive/folders/11kdkERhyU4W0SZ5-hkRXWW0GxgwF13ci)
-1. Tóm tắt abstract của paper (trừ file 3 với file 12)
-   - Hùng: file lẻ.
-   - Hiếu: file chẵn.
-2. Vừa đọc vừa tóm tắt các yêu cầu trên tuỳ vào từng chủ đề của bài báo.
-3. Paper là 1 phần, phần chính là trả lời được những câu hỏi ở trên.
+-------------------------------------------------
+## TÓM TẮT CÁC BÀI PAPER
 ### Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
 Chatbot có khả năng tự thu thập dữ liệu train từ các cuộc đối thoại với người dùng.  
    - Đánh giá mức độ thoả mãn của câu trả lời. Khi cuộc trò chuyện diễn ra suôn sẻ, phản hồi của người dùng trở thành dữ liệu train mới.  
@@ -49,3 +38,48 @@ Bài này chủ yếu nói về UI/UX trong NLP có tác động như thế nào
 
 ### Ứng dụng thuật toán học có giám sát MULTI-CLASS SVM trong xây dựng hệ thống chatbot hỏi đáp tiếng việt
 Xây dựng hệ thống chatbot đóng (Vietnam airline chatbot) với thuật toán học có giám sát Multi-Class SVM. Sử dụng kỹ thuật túi từ BoW (Bag of Words) và phương pháp túi từ TF-IDF(Term Frequency - Inverse Document Frequency) 
+
+------------------------
+## I. Chatbot Operation
+![giai_doan_chatbot](https://lh6.googleusercontent.com/qL0g26dUhd5Gk5GA1WDT1VUaNpP8K3MbenJjR3t0eQDeViQ9BLAaqby2KDtCZIkt3X9xuGKxxe1LvWwXl8XQr-K-aUWM7atphZFXFjNaoanTJtSlgPYuqUYtad2a7wB7qkGuZJnlmjy2WdkAmg)
+
+Example
+![example](https://miro.medium.com/max/700/1*-f1gD5s1e1P2aNpeFOY9HA.png)
+
+Một vài task mà 1 chatbot phải làm:
+- Hiểu message: intent + parameter
+- Xử lý (intent + parameter) -> next action (ask subsequent question or delivered a response)
+- Maintain the Context in a single session. (its state with all parameters)
+  
+## II. Problems
+1. How to get intents & entities
+2. Context: what & how to save
+3. How to response
+
+## III. Proposed Methodology
+1. Get intents
+   Using intent classification
+   > DATA: đưa vào bao nhiêu class intents, rồi bỏ vào mạng deep learning.(LSTM-RNN)
+
+   Xử lý dữ liệu: lemmatize, stemming, stopword removal.
+
+2. Get entities
+    Build entity recognizer with NLTK & SpaCy
+    (person, location, date)
+
+3. Context
+   Save parameters + entites + intents
+   
+## IV. Experiences
+1. Semantic Similarity Chatbot 
+   (belong to Information Retrieval Chatbot)
+   [link](https://colab.research.google.com/drive/19MM2mDwB_-y2PuBcJnDoTL4502fLK2hs)
+   - data: cornell-movie
+   - Biểu diễn word bằng vector (300 dimensions)
+   - Câu => Vector(300 dimension) (mean all words)
+   - Request => Vector => Nearest Turn (compare 2 vector) => Response
+
+2. Chatbot using LSTM-RNN model
+   [link](https://colab.research.google.com/drive/1aDTCUj4FCFagilnXrhxbfVIDPMiZYxI7)
+    Xây dựng mạng LSTM-RNN sử dụng Tensorflow.
+
