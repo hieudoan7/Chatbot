@@ -82,17 +82,3 @@ Một vài task mà 1 chatbot phải làm:
 2. Chatbot using LSTM-RNN model
    [link](https://colab.research.google.com/drive/1aDTCUj4FCFagilnXrhxbfVIDPMiZYxI7)
     Xây dựng mạng LSTM-RNN sử dụng Tensorflow.
-
-----------------------------------
-## Week 02: Read Papers 
-Mon, 05/08/2019
-Đọc tất cả papers liên quan chatbot: abstract, experiment
-- Bài toán
-- Hướng giải quyết
-- Hiệu quả: dataset, so sánh (them), độ đo
-- chinese chatbot
-- Liệu  apply tiếng việt
-
-Ghi note mind map: Vấn đề bài báo đó là gì => Người ta giải quyết như thế nào: (chỉ cần ghi tên thuật toán và để link vào, ko sa đà chi tiết).
-
-
