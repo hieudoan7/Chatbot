@@ -84,3 +84,5 @@ users.
     - Generator (RNN-model) tao ra machine reply
     - Discriminator: phân biệt câu người vs câu máy
     - Đánh giá dựa vào câu trả lời của chatbot càng gần người càng tốt 
+
+Dịch vụ: Amazon Mechanism Turk
