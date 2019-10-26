@@ -1,4 +1,5 @@
-#Week 09: Đục BiDAF & Chạy code
+# Week 09: Đục BiDAF & Chạy code  
+
 26/10/2019 - 02/11/2019
 
 + Code Pytorch: https://github.com/galsang/BiDAF-pytorch
