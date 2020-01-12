@@ -76,6 +76,8 @@
         ```
       * Results: {'exact': 27.984344422700588, 'f1': 44.033677415257436, 'total': 511, 'HasAns_exact': 27.984344422700588, 'HasAns_f1': 44.033677415257436, 'HasAns_total': 511, 'best_exact': 27.984344422700588, 'best_exact_thresh': 0.0, 'best_f1': 44.033677415257436, 'best_f1_thresh': 0.0}
     * So sánh với kết quả trên github của MLQA:
+    
+    
         | Model F1 Score | en | es | de | ar | hi| vi | zh | 
         |:--- |:---: |:---: | :---: |:---: | :---: | :---: | :---: | 
         BERT-Large    | **80.2**| - | - | - |- |- |- |
