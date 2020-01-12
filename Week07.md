@@ -84,3 +84,5 @@ CNNs.
     * convert these numeric vectors to two probability values so that we can compare the Query-relevance of all Context words. 
     * p1 and p2 are then used to find the best Answer span. The best Answer span is simply a substring of the Context with the highest span score. The span score, in turn, is simply the product of the p1 score of the first word in that span and the p2 score of the last word in the span. We then return the span with the highest span score as our Answer.
     ![The output layer, which converts M1 and M2 to two vector of probabilities, p1 and p2](https://miro.medium.com/max/4046/1*IohHc3HjsJSOuTj5zsil4g.jpeg)
+   
+   Tham khảo: [Meraldo Antonio](https://towardsdatascience.com/the-definitive-guide-to-bi-directional-attention-flow-d0e96e9e666b)
